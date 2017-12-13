@@ -1,7 +1,7 @@
 #Greenfoot project file
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=9222291abf38747a8a4ba37efbdd6dae41d62e9d
+>>>>>>>=a6af7b210bf8638cbef64f45f62107d3ad44d975
 class.GAHARA.image=person.png
 class.GAHARA.superclass=greenfoot.Actor
 class.MyWorld.superclass=greenfoot.World
@@ -14,7 +14,7 @@ class.tree.superclass=greenfoot.Actor
 mainWindow.height=546
 mainWindow.width=836
 mainWindow.x=953
-mainWindow.y=520
+mainWindow.y=534
 package.numDependencies=0
 package.numTargets=5
 project.charset=UTF-8
@@ -47,7 +47,7 @@ target2.y=70
 target3.editor.height=700
 target3.editor.width=900
 target3.editor.x=160
-target3.editor.y=305
+target3.editor.y=389
 target3.height=50
 target3.name=fuckinDTB
 target3.naviview.expanded=true
