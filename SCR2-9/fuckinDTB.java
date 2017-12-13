@@ -19,5 +19,10 @@ public class fuckinDTB extends Actor
         setRotation(0);
         move(5);
         }
+        
+        if( Greenfoot.isKeyDown( "left" ) ){
+        setRotation(180);
+        move(5);
+        }
     }    
 }
