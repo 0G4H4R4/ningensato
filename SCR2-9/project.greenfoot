@@ -1,11 +1,11 @@
 #Greenfoot properties
-#Wed Dec 13 10:01:50 JST 2017
+#Wed Dec 13 10:02:36 JST 2017
 target4.type=ClassTarget
 <<<<<<<=HEAD
 target3.height=50
 target5.height=50
 class.subsub.image=man01.png
-target1.editor.y=100
+target1.editor.y=128
 target1.editor.x=105
 target4.name=subsub
 target4.typeParameters=
@@ -16,7 +16,7 @@ class.fuckinDTB.superclass=greenfoot.Actor
 mainWindow.width=836
 >>>>>>>=9222291abf38747a8a4ba37efbdd6dae41d62e9d
 target2.width=80
-target3.editor.y=277
+target3.editor.y=249
 target3.editor.x=160
 target5.name=MyWorld
 target5.editor.width=900
@@ -59,7 +59,7 @@ target2.type=ClassTarget
 target2.y=70
 target2.x=160
 class.MyWorld.superclass=greenfoot.World
-mainWindow.y=492
+mainWindow.y=520
 mainWindow.x=953
 target5.width=80
 target1.y=70
