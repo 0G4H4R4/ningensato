@@ -1,9 +1,13 @@
 #Greenfoot project file
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=c8c556c7b633d1fc6588a7509062901ddb002c88
+class.MyWorld.image=weave.jpg
 class.MyWorld.superclass=greenfoot.World
 mainWindow.height=574
 mainWindow.width=851
-mainWindow.x=278
-mainWindow.y=354
+mainWindow.x=527
+mainWindow.y=296
 package.numDependencies=0
 package.numTargets=1
 project.charset=UTF-8
@@ -20,5 +24,18 @@ target1.typeParameters=
 target1.width=80
 target1.x=70
 target1.y=10
+target2.editor.height=700
+target2.editor.width=900
+target2.editor.x=103
+target2.editor.y=50
+target2.height=50
+target2.name=MyWorld
+target2.naviview.expanded=true
+target2.showInterface=false
+target2.type=ClassTarget
+target2.typeParameters=
+target2.width=80
+target2.x=70
+target2.y=10
 version=2.7.1
 world.lastInstantiated=MyWorld
