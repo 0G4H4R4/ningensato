@@ -12,8 +12,13 @@ public class player01 extends Actor
      * Act - do whatever the player01 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+
     public void act() 
     {
+       
+        
+        
         // Add your action code here.
         if( Greenfoot.isKeyDown( "right" ) ){
             setRotation(0);
@@ -32,4 +37,5 @@ public class player01 extends Actor
             move(4);
         }
     }    
+    
 }
