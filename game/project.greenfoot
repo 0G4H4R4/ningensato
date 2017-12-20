@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Wed Dec 20 10:03:50 JST 2017
+#Wed Dec 20 10:04:52 JST 2017
 target4.type=ClassTarget
 <<<<<<<=HEAD
 target3.height=50
@@ -71,8 +71,8 @@ target2.showInterface=false
 target3.name=item01
 target1.editor.width=900
 target3.naviview.expanded=true
-class.MyWorld.image=weave.jpg
-target3.width=80
 project.charset=UTF-8
-target4.showInterface=false
+target3.width=80
+class.MyWorld.image=weave.jpg
 =\=\=\=\=\=\=
+target4.showInterface=false
