@@ -14,7 +14,7 @@ public class MyWorld extends World
      * 
      */
     
-   private int rtime = 5000;
+   private int rtime = 500;
    private int score = 0;
    
    public void act()
@@ -24,7 +24,7 @@ public class MyWorld extends World
         
         if( rtime == 0 )
         {
-                showText( "里から抜け出すことはできなかった・・・", 560, 405 );
+                showText( "里から抜け出すことができなかった・・・", 560, 405 );
                 showText( "スコア： "+score, 560, 445);
                 Greenfoot.stop();
         }
