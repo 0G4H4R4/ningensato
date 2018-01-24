@@ -58,7 +58,7 @@ public class MyWorld extends World
             width[3] = width[3] + 9;
             width[4] = width[4] + 58;
             width[5] = width[5] + 40;
-            width[6] = width[6] + 63;
+            width[6] = width[6] + 75;
             width[7] = width[7] + 6;
             width[8] = width[8] + 6;
         }
