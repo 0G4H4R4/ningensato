@@ -12,15 +12,15 @@ public class player01 extends Actor
      * Act - do whatever the player01 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private int items01;
+    private int items02;
+
     public void act() 
     {
         int x = getX();
         int y = getY();
-        //Actor actor = getOneObjectAtOffset( 0, 0, kabe01.class );
-        //if( actor != null ){
-            // kabe01 とぶつかった時の処理を書く
-        //}       
-        //else{
+        
+
             if( Greenfoot.isKeyDown( "right" ) ){
             setLocation(x+2, y);
             }
@@ -32,7 +32,21 @@ public class player01 extends Actor
             }
             else if( Greenfoot.isKeyDown( "down" ) ){
             setLocation(x, y+2);
-            }
-        //}
-    }    
+        }
+        
+        Actor actor1 = getOneObjectAtOffset( 0, 0, item01.class );
+        if( actor1 != null ){
+            getWorld().showText( "あたった "+ items01, 200, 50 );
+            getWorld().removeObject( actor1 ); 
+        }   
+        
+        Actor actor2 = getOneObjectAtOffset( 0, 0, item02.class );
+        if( actor2 != null ){
+            getWorld().showText( "あたった "+ items02, 300, 50 );
+            getWorld().removeObject( actor2 ); 
+        }   
+    }
+    
+
+    
 }
