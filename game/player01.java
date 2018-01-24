@@ -12,7 +12,8 @@ public class player01 extends Actor
      * Act - do whatever the player01 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
+    int items01;
+    int items02;
 
     public void act() 
     {
@@ -36,7 +37,18 @@ public class player01 extends Actor
             setLocation(x, y+2);
             }
         //}
-
+Actor actor1 = getOneObjectAtOffset( 0, 0, item01.class );
+if( actor1 != null ){
+    items01++;
+    getWorld().showText( "item01 = "+ items01, 100, 50 );
+    getWorld().removeObject( actor1 );
+}       
+Actor actor2 = getOneObjectAtOffset( 0, 0, item02.class );
+if( actor2 != null ){
+    items02++;
+     getWorld().showText( "item02 = "+ items02, 200, 50 );
+     getWorld().removeObject( actor2);
+}       
     }    
     
 }
