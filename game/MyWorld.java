@@ -13,10 +13,28 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+    
+   private int rtime = 5000;
+   private int score = 0;
+   
+   public void act()
+    {
+        rtime--;
+        showText("制限時間："+rtime, 965, 30);
+        
+        if( rtime == 0 )
+        {
+                showText( "里から抜け出すことはできなかった・・・", 560, 405 );
+                showText( "スコア： "+score, 560, 445);
+                Greenfoot.stop();
+        }
+    }
+    
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1080, 810, 1); 
+<<<<<<< HEAD
         int width[]={0, 0, 600, 230, 230, 590, 230, 430};
         int height[]={150, 0, 150, 150, 300, 150, 150, 580, 460};
         for(int i=0; i<12; i++){
@@ -58,5 +76,8 @@ public class MyWorld extends World
             height[7] = height[7] + 5;
             height[8] = height[8] + 4;
         }
+=======
+        addObject( new player01(), 30, 50 );
+>>>>>>> cd6cf55f417400d7debffbc58ca7b49c7cac69e9
     }
 }
