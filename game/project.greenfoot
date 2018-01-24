@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Wed Jan 10 09:22:29 JST 2018
+#Wed Jan 24 09:20:52 JST 2018
 target4.type=ClassTarget
 <<<<<<<=HEAD
 target3.height=50
@@ -51,8 +51,8 @@ target2.type=ClassTarget
 target2.y=10
 target2.x=160
 class.MyWorld.superclass=greenfoot.World
-mainWindow.y=124
-mainWindow.x=336
+mainWindow.y=170
+mainWindow.x=261
 dependency1.from=MyWorld
 target5.width=80
 target1.y=60
