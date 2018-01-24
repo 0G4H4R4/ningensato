@@ -14,7 +14,7 @@ public class MyWorld extends World
      * 
      */
     
-   private int rtime = 500;
+   private int rtime = 5000;
    private int score = 0;
    
    public void act()
@@ -34,13 +34,10 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1080, 810, 1); 
-<<<<<<< HEAD
+
         int width[]={0, 0, 600, 230, 230, 590, 230, 430};
         int height[]={150, 0, 150, 150, 300, 150, 150, 580, 460};
-=======
-        int width[]={0, 0, 600, 230, 230, 590, 230, 70, 430};
-        int height[]={150, 0, 150, 150, 300, 150, 150, 580, 705};
->>>>>>> bd755869859edb885b288a13333cddca12554a43
+
         for(int i=0; i<12; i++){
             addObject( new side(), width[0], 10 );
             addObject( new side(), width[0], 800 );
@@ -82,12 +79,8 @@ public class MyWorld extends World
             height[7] = height[7] + 5;
             height[8] = height[8] + 4;
         }
-<<<<<<< HEAD
 
         addObject( new player01(), 30, 50 );
 
-=======
-        addObject( new player01(), 30, 50 );
->>>>>>> bd755869859edb885b288a13333cddca12554a43
     }
 }
