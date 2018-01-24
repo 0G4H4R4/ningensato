@@ -34,9 +34,8 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1080, 810, 1); 
-<<<<<<< HEAD
-        int width[]={0, 0, 600, 230, 230, 590, 230, 430};
-        int height[]={150, 0, 150, 150, 300, 150, 150, 580, 460};
+        int width[]={0, 0, 600, 230, 230, 590, 230, 70, 430};
+        int height[]={150, 0, 150, 150, 300, 150, 150, 580, 705};
         for(int i=0; i<12; i++){
             addObject( new side(), width[0], 10 );
             addObject( new side(), width[0], 800 );
@@ -46,7 +45,8 @@ public class MyWorld extends World
             addObject( new side(), width[4], 550 );
             addObject( new side(), width[5], 412 );
             addObject( new side(), width[6], 662 );
-            addObject( new itemwall(), width[7], 413 );
+            addObject( new itemwall(), width[7], 550 );
+            addObject( new itemwall(), width[8], 413 );
             width[0] = width[0] + 95;	
             width[1] = width[1] + 30;
             width[2] = width[2] + 50;
@@ -55,6 +55,7 @@ public class MyWorld extends World
             width[5] = width[5] + 40;
             width[6] = width[6] + 63;
             width[7] = width[7] + 6;
+            width[8] = width[8] + 6;
         }
         for(int i=0; i<13; i++){
             addObject( new var(), 10, height[0] );
@@ -65,7 +66,7 @@ public class MyWorld extends World
             addObject( new var(), 750, height[5] );
             addObject( new var(), 900, height[6] );
             addObject( new var(), 193, height[7] );
-            addObject( new itemwall2(), 193, height[8] );
+            addObject( new itemwall2(), 960, height[8] );
             height[0] = height[0] + 66;
             height[1] = height[1] + 55;
             height[2] = height[2] + 20;
@@ -76,8 +77,6 @@ public class MyWorld extends World
             height[7] = height[7] + 5;
             height[8] = height[8] + 4;
         }
-=======
         addObject( new player01(), 30, 50 );
->>>>>>> cd6cf55f417400d7debffbc58ca7b49c7cac69e9
     }
 }
