@@ -14,6 +14,7 @@ public class player01 extends Actor
      */
     int items01;
     int items02;
+    int items03;
 
     public void act() 
     {
@@ -37,18 +38,24 @@ public class player01 extends Actor
             setLocation(x, y+2);
             }
         //}
-Actor actor1 = getOneObjectAtOffset( 0, 0, item01.class );
-if( actor1 != null ){
-    items01++;
-    getWorld().showText( "item01 = "+ items01, 100, 50 );
-    getWorld().removeObject( actor1 );
-}       
-Actor actor2 = getOneObjectAtOffset( 0, 0, item02.class );
-if( actor2 != null ){
-    items02++;
-     getWorld().showText( "item02 = "+ items02, 200, 50 );
-     getWorld().removeObject( actor2);
-}       
+            Actor actor1 = getOneObjectAtOffset( 0, 0, item01.class );
+            if( actor1 != null ){
+                items01++;
+                getWorld().showText( "item01 = "+ items01, 100, 50 );
+                getWorld().removeObject( actor1 );
+            }       
+            Actor actor2 = getOneObjectAtOffset( 0, 0, item02.class );
+            if( actor2 != null ){
+                items02++;
+                getWorld().showText( "item02 = "+ items02, 300, 50 );
+                getWorld().removeObject( actor2);
+            }       
+            Actor actor3 = getOneObjectAtOffset( 0, 0, item03.class );
+            if( actor3 != null ){
+                items03++;
+                getWorld().showText( "item03 = "+ items03, 500, 50 );
+                getWorld().removeObject( actor3);
+            } 
     }    
     
 }
