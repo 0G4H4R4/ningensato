@@ -35,8 +35,10 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1080, 810, 1); 
 
-        int width[]={0, 0, 600, 230, 230, 590, 230};
-        int height[]={150, 0, 150, 150, 300, 150, 150, 580};
+
+        addObject(new RandEnemy(), 300, 200 );
+        int width[]={0, 0, 600, 230, 230, 590, 230, 430};
+        int height[]={150, 0, 150, 150, 300, 150, 150, 580, 460};
 
 
         for(int i=0; i<12; i++){
@@ -76,6 +78,7 @@ public class MyWorld extends World
         }
 
 
+
         addObject( new player01(), 30, 70 );
 
         addObject( new itemwall(), 100, 550 );
@@ -87,7 +90,11 @@ public class MyWorld extends World
         addObject( new item02(), 830, 200);
         addObject( new item03(), 230, 605);
         addObject( new goal(), 1020, 722);
-
+        
+        
+        
+        
+        addObject(new ChaseEnemy(), 800, 722 );
 
     }
 }

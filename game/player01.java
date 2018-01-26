@@ -12,30 +12,69 @@ public class player01 extends Actor
      * Act - do whatever the player01 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+
     private int items01;
     private int items02;
     private int items03;
     private int count=0;
     private int score=0;
 
+    public  int last;
+    
+    public player01()
+    {
+        last = 0;
+        
+    }
+    
     public void act() 
     {
         int x = getX();
-        int y = getY();        
+        int y = getY();
         
-        //Player 動き
-        if( Greenfoot.isKeyDown( "right" ) ){
-            setLocation(x+2, y);
+        Actor actorVar = getOneObjectAtOffset( 0, 0, var.class );   
+        Actor actorSide = getOneObjectAtOffset( 0, 0, side.class );     
+        Actor actorItem = getOneObjectAtOffset( 0, 0, itemwall.class );
+        
+        boolean HitFlag = actorVar != null || actorSide != null || actorItem != null;
+        
+        if(HitFlag){
+            //kabe01 とぶつかった時の処理を書く
+            if( last == 0 ){
+                setLocation(x-4, y);
+            }
+            else if( last == 1 ){
+                setLocation(x+4, y);
+            }
+            else if( last == 2 ){
+                setLocation(x, y+4);
+            }
+            else if( last == 3 ){
+                setLocation(x, y-4);
+            }
+        }       
+        else{
+            if( Greenfoot.isKeyDown( "right" ) ){
+                setLocation(x+2, y);
+                last = 0;
+            }
+            else if( Greenfoot.isKeyDown( "left" ) ){
+                setLocation(x-2, y);
+                last = 1;
+            }
+            else if( Greenfoot.isKeyDown( "up" ) ){
+                setLocation(x, y-2);
+                last = 2;
+            }
+            else if( Greenfoot.isKeyDown( "down" ) ){
+                setLocation(x, y+2);
+                last = 3;
+            }
         }
-        else if( Greenfoot.isKeyDown( "left" ) ){
-            setLocation(x-2, y);
-        }
-        else if( Greenfoot.isKeyDown( "up" ) ){
-            setLocation(x, y-2);
-        }
-        else if( Greenfoot.isKeyDown( "down" ) ){
-            setLocation(x, y+2);
-        }
+      
+
+             
+        
         
         //アイテム取得処理
         Actor actor1 = getOneObjectAtOffset( 0, 0, item01.class );
@@ -109,4 +148,5 @@ public class player01 extends Actor
                 Greenfoot.stop();
         }    
     }
+
 }
