@@ -23,13 +23,17 @@ public class Enemy extends Actor
 
     public void act() 
     {
-        // Add your action code here.
+       
+    }    
+    
+    public void ChkHit()
+    {
+         // Add your action code here.
        Actor actor = getOneObjectAtOffset( 0, 0, player01.class );
         if( actor != null ){
             // player01とぶつかった時の処理を書く
             Greenfoot.stop();
-            Enemy enemy = (Enemy) getWorld().getObjects(Enemy.class).get(0);
-            getWorld().showText( "捕まった", enemy.getX(), enemy.getY());
+            getWorld().showText( "捕まった", getX(), getY());
         }      
-    }    
+    }
 }
