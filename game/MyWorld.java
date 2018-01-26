@@ -81,7 +81,7 @@ public class MyWorld extends World
             height[8] = height[8] + 4;
         }
 
-        addObject( new player01(), 30, 50 );
+        addObject( new player01(), 30, 70 );
 
         addObject( new item01(), 280, 350);
         addObject( new item02(), 830, 200);
