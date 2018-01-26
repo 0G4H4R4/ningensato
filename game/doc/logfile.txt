@@ -1,0 +1,35 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-7-openjdk-amd64/bin/javadoc
+-author
+-version
+-nodeprecated
+-protected
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.7
+-classpath
+/usr/share/greenfoot/extensions/greenfoot.jar:/usr/share/greenfoot/bluejcore.jar:/usr/share/greenfoot/bluejeditor.jar:/usr/share/greenfoot/bluejext.jar:/usr/share/greenfoot/AppleJavaExtensions.jar:/usr/share/greenfoot/junit-4.8.2.jar:/usr/share/greenfoot/bluej.jar:/usr/share/greenfoot/commons-httpclient-3.1.jar:/usr/share/greenfoot/commons-logging-api-1.1.2.jar:/usr/share/greenfoot/commons-codec-1.3.jar:/usr/share/greenfoot/jl1.0.1.jar:/usr/share/greenfoot/opencsv-2.3.jar:/home/JNET/13097/softdev/ningensato/game
+-d
+/home/JNET/13097/softdev/ningensato/game/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/usr/share/greenfoot/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/home/JNET/13097/softdev/ningensato/game/player01.java
+<---- end of javadoc command ---->
+ソース・ファイル/home/JNET/13097/softdev/ningensato/game/player01.javaを読み込んでいます...
+/home/JNET/13097/softdev/ningensato/game/player01.java:62: エラー: 式の開始が不正です
+    }    
+    ^
+/home/JNET/13097/softdev/ningensato/game/player01.java:64: エラー: 構文解析中にファイルの終わりに移りました
+}
+ ^
+エラー2個

@@ -24,7 +24,7 @@ public class MyWorld extends World
         
         if( rtime == 0 )
         {
-                showText( "里から抜け出すことはできなかった・・・", 560, 405 );
+                showText( "里から抜け出すことができなかった・・・", 560, 405 );
                 showText( "スコア： "+score, 560, 445);
                 Greenfoot.stop();
         }
@@ -35,9 +35,12 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1080, 810, 1); 
 
+
         addObject(new RandEnemy(), 300, 200 );
         int width[]={0, 0, 600, 230, 230, 590, 230, 430};
         int height[]={150, 0, 150, 150, 300, 150, 150, 580, 460};
+
+
         for(int i=0; i<12; i++){
             addObject( new side(), width[0], 10 );
             addObject( new side(), width[0], 800 );
@@ -47,15 +50,13 @@ public class MyWorld extends World
             addObject( new side(), width[4], 550 );
             addObject( new side(), width[5], 412 );
             addObject( new side(), width[6], 662 );
-            addObject( new itemwall(), width[7], 413 );
-            width[0] = width[0] + 95;	
+            width[0] = width[0] + 95;   
             width[1] = width[1] + 30;
             width[2] = width[2] + 50;
             width[3] = width[3] + 9;
             width[4] = width[4] + 58;
             width[5] = width[5] + 40;
-            width[6] = width[6] + 63;
-            width[7] = width[7] + 6;
+            width[6] = width[6] + 75;
         }
         for(int i=0; i<13; i++){
             addObject( new var(), 10, height[0] );
@@ -66,7 +67,6 @@ public class MyWorld extends World
             addObject( new var(), 750, height[5] );
             addObject( new var(), 900, height[6] );
             addObject( new var(), 193, height[7] );
-            addObject( new itemwall2(), 193, height[8] );
             height[0] = height[0] + 66;
             height[1] = height[1] + 55;
             height[2] = height[2] + 20;
@@ -75,8 +75,16 @@ public class MyWorld extends World
             height[5] = height[5] + 10;
             height[6] = height[6] + 10;
             height[7] = height[7] + 5;
-            height[8] = height[8] + 4;
         }
+
+        addObject( new itemwall(), 100, 550 );
+        addObject( new itemwall(), 460, 413 );
+        addObject( new itemwall2(), 960, 730 );
+        addObject( new player01(), 30, 70 );
+        addObject( new item01(), 280, 350);
+        addObject( new item02(), 830, 200);
+        addObject( new item03(), 230, 605);
+        addObject( new goal(), 1020, 722);
 
     }
 }
