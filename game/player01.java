@@ -74,11 +74,23 @@ public class player01 extends Actor
                     count++;
                 }
             }
-            else{
-                //アイテムウォール, 識別処理で突破させない
-            }
+        //}
+            if( actor1 != null ){
+                items01++;
+                getWorld().showText( "item01 = "+ items01, 100, 50 );
+                getWorld().removeObject( actor1 );
+            }       
+            if( actor2 != null ){
+                items02++;
+                getWorld().showText( "item02 = "+ items02, 300, 50 );
+                getWorld().removeObject( actor2);
+            }       
+            if( actor3 != null ){
+                items03++;
+                getWorld().showText( "item03 = "+ items03, 500, 50 );
+                getWorld().removeObject( actor3);
+            } 
         }
-        
         Actor actor5 = getOneObjectAtOffset( 0, 0, itemwall2.class );
         if( actor5 != null){
             if( items03==1 ){
@@ -88,9 +100,6 @@ public class player01 extends Actor
                     getWorld().removeObject( actor5 );
                     count++;
                 }
-            }
-            else{
-                //アイテムウォール, 識別処理で突破させない
             }
         }
         
