@@ -24,7 +24,7 @@ public class MyWorld extends World
         
         if( rtime == 0 )
         {
-                showText( "里から抜け出すことはできなかった・・・", 560, 405 );
+                showText( "里から抜け出すことができなかった・・・", 560, 405 );
                 showText( "スコア： "+score, 560, 445);
                 Greenfoot.stop();
         }
@@ -37,6 +37,7 @@ public class MyWorld extends World
 
         int width[]={0, 0, 600, 230, 230, 590, 230, 70, 430};
         int height[]={150, 0, 150, 150, 300, 150, 150, 580, 705};
+
 
         for(int i=0; i<12; i++){
             addObject( new side(), width[0], 10 );
@@ -81,10 +82,12 @@ public class MyWorld extends World
         }
 
         addObject( new player01(), 30, 50 );
+
         addObject( new item01(), 280, 350);
         addObject( new item02(), 830, 200);
         addObject( new item03(), 230, 605);
         addObject( new goal(), 1020, 722);
+
 
     }
 }
