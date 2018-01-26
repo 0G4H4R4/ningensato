@@ -86,6 +86,7 @@ public class MyWorld extends World
         addObject( new item01(), 280, 350);
         addObject( new item02(), 830, 200);
         addObject( new item03(), 230, 605);
+        addObject( new goal(), 1020, 722);
 
 
     }
