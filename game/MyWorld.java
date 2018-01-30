@@ -36,7 +36,7 @@ public class MyWorld extends World
         super(1080, 810, 1); 
 
 
-        addObject(new RandEnemy(), 300, 200 );
+        
         int width[]={0, 0, 600, 230, 230, 590, 230, 430};
         int height[]={150, 0, 150, 150, 300, 150, 150, 580, 460};
 
@@ -92,9 +92,9 @@ public class MyWorld extends World
         addObject( new goal(), 1020, 722);
        
         
-        
-        addObject(new ChaseEnemy(), 800, 722 );
-
-        addObject(new RandEnemy(), 993, 188 );
+        //Greenfoot.getRandomNumber(4);
+        addObject(new ChaseEnemy(), 260, 280 );
+        addObject(new RandEnemy(), 658, 218 );
+        addObject(new RandEnemy(), 110, 726 );
     }
 }

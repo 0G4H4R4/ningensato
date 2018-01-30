@@ -55,19 +55,19 @@ public class player01 extends Actor
         }       
         else{
             if( Greenfoot.isKeyDown( "right" ) ){
-                setLocation(x+2, y);
+                setLocation(x+3, y);
                 last = 0;
             }
             else if( Greenfoot.isKeyDown( "left" ) ){
-                setLocation(x-2, y);
+                setLocation(x-3, y);
                 last = 1;
             }
             else if( Greenfoot.isKeyDown( "up" ) ){
-                setLocation(x, y-2);
+                setLocation(x, y-3);
                 last = 2;
             }
             else if( Greenfoot.isKeyDown( "down" ) ){
-                setLocation(x, y+2);
+                setLocation(x, y+3);
                 last = 3;
             }
         }
