@@ -25,6 +25,9 @@ public class RandEnemy extends Enemy
         last = -1;
         count = 0;
         tmp = 0;
+         GreenfootImage image = getImage();
+        image.scale(image.getWidth()/8, image.getHeight()/8);
+        setImage(image);      
     }
     
     

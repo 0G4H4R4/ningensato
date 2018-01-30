@@ -2,7 +2,7 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
 >>>>>>>=bc8bd086d6fe8975d0d76f6adac980023928f815
-class.ChaseEnemy.image=enemy.png
+class.ChaseEnemy.image=enemy2.ashx
 class.ChaseEnemy.superclass=Enemy
 class.Enemy.image=enemy.png
 class.Enemy.superclass=greenfoot.Actor
@@ -120,7 +120,7 @@ project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
 target1.editor.x=1020
-target1.editor.y=319
+target1.editor.y=291
 target1.height=50
 target1.name=Enemy
 target1.naviview.expanded=true
