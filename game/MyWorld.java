@@ -77,16 +77,24 @@ public class MyWorld extends World
             height[7] = height[7] + 5;
         }
 
+
+
+        addObject( new player01(), 30, 70 );
+
         addObject( new itemwall(), 100, 550 );
         addObject( new itemwall(), 460, 413 );
         addObject( new itemwall2(), 960, 730 );
-        addObject( new player01(), 30, 70 );
+
+
         addObject( new item01(), 280, 350);
         addObject( new item02(), 830, 200);
         addObject( new item03(), 230, 605);
         addObject( new goal(), 1020, 722);
+       
         
-      
+        
+        addObject(new ChaseEnemy(), 800, 722 );
 
+        addObject(new RandEnemy(), 993, 188 );
     }
 }

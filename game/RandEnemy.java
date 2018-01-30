@@ -36,8 +36,9 @@ public class RandEnemy extends Enemy
         
         Actor actorVar = getOneObjectAtOffset( 0, 0, var.class );   
         Actor actorSide = getOneObjectAtOffset( 0, 0, side.class );     
+        Actor actorItem = getOneObjectAtOffset( 0, 0, itemwall.class );
         
-        boolean HitFlag = actorVar != null || actorSide != null ;
+        boolean HitFlag = actorVar != null || actorSide != null || actorItem != null;
         
         if(HitFlag){
             //kabe01 とぶつかった時の処理を書く
@@ -60,7 +61,7 @@ public class RandEnemy extends Enemy
             if(count == 0)
             {
                 tmp = Greenfoot.getRandomNumber(4);
-                count = 200;
+                count = 100;
             }
             else
             {

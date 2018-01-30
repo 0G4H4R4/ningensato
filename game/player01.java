@@ -17,6 +17,7 @@ public class player01 extends Actor
     private int items02;
     private int items03;
     private int count=0;
+    private int score=0;
 
     public  int last;
     
@@ -140,6 +141,12 @@ public class player01 extends Actor
                 }
             }
         }
+        
+        Actor actor6 = getOneObjectAtOffset( 0, 0, goal.class );
+        if( actor6 != null ){
+                getWorld().showText( "- Mission Complete -", 560, 405 );
+                Greenfoot.stop();
+        }    
     }
 
 }
