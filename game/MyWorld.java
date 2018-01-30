@@ -96,5 +96,6 @@ public class MyWorld extends World
         addObject(new ChaseEnemy(), 260, 280 );
         addObject(new RandEnemy(), 658, 218 );
         addObject(new RandEnemy(), 110, 726 );
+        addObject(new ChaseEnemy(), 668, 726 );
     }
 }
