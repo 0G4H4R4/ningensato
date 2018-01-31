@@ -15,6 +15,15 @@ public class ChaseEnemy extends Enemy
     public int lastX = 0;
     public int lastY = 0;
     
+    
+    public ChaseEnemy()
+    {
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth()/4, image.getHeight()/4);
+        setImage(image);      
+    }
+    
+    
     public void act() 
     {
  
